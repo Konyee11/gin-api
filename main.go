@@ -13,6 +13,8 @@ func main() {
 			"message": "Hello World",
 		})
 	})
+	engine.Static("/static", "./static")
+
 	err := engine.Run(":3000")
 	if err != nil {
 		return
